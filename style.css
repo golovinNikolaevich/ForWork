@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: grey;
+	font-family: Tahoma;
+}
+
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+}
+
+.navigation {
+	font-size: 4em;
+}
+
+.navigation span {
+	color: white;
+	cursor: pointer;
+}
+
+nav {
+	list-style-type: none;
+}
+
+#dropdown {
+	cursor: pointer;
+	display: none;
+}

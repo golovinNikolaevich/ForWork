@@ -3,16 +3,36 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<div class="navigation">
+		<nav class="nav-menu">
+			<li><a href="">Link number 1</a></li>
+			<li class="drop-arch"><a href="">Link number 2</a>
+				<span onclick="myFunction()">&or;</span>
+				<ul id="dropdown">
+					<li><a href="http://vk.com">Link drop 1</a></li>
+					<li><a href="">Link drop 2</a></li>
+					<li><a href="">Link drop 3</a></li>
+					<li><a href="">Link drop 4</a></li>
+				</ul>
+			</li>
+			<li><a href="">Link number 3</a></li>
+			<li><a href="">Link number 4</a></li>
+			<li><a href="">Link number 5</a></li>
+		</nav>
+	</div>
+	<script>
+		function myFunction() {
+	    var x = document.getElementById('dropdown');
+	    if (x.style.display === 'block') {
+	        x.style.display = 'none';
+	    } else {
+	        x.style.display = 'block';
+	    }
+		}
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	</script>
 </body>
 </html>
